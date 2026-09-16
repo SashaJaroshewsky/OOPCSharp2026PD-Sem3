@@ -9,8 +9,8 @@ namespace PZ1._1
             int a;
             int b = 6;
             int c;
-           
-            if(int.TryParse(Console.ReadLine(), out a))
+
+            if (int.TryParse(Console.ReadLine(), out a))
             {
                 Console.WriteLine("The number is: " + a);
             }
@@ -21,6 +21,11 @@ namespace PZ1._1
 
             float P = 0;
             P = Math.Max(a, b);
+
+            do
+            {
+
+            } while (!int.TryParse(Console.ReadLine(), out a));
 
         }
     }

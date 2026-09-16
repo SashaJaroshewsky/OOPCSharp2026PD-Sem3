@@ -22,6 +22,12 @@ namespace PZ1._1
             {
                 Console.Write(arr[i] + " ");
             }
+
+            ////foreach (int num in arr)
+            ////{
+            ////    Console.Write(num + " ");
+            ////}
+
             Console.WriteLine();
         }
 
