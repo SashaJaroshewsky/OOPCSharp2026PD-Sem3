@@ -27,7 +27,7 @@
             for (int i = 0; i < arr3.Length; i++)
             {
                 for (int j = 0; j < arr3[i].Length; j++)
-                {
+                {                         //[1, 21)
                     arr3[i][j] = random.Next(1, 20);
                 }
             }
