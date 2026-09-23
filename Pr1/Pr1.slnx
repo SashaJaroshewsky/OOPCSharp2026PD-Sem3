@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="Pr1/Pr1.csproj" />
   <Project Path="Pr1Task2/Pr1Task2.csproj" />
+  <Project Path="PZ2/PZ2.csproj" Id="55245318-625f-4b7a-bb8b-953bb026ee4a" />
 </Solution>
