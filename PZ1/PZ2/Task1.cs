@@ -1,6 +1,4 @@
-﻿
-
-namespace PZ2
+﻿namespace PZ2
 {
     internal class Task1
     {

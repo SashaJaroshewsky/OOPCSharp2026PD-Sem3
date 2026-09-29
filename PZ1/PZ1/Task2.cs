@@ -6,7 +6,7 @@ namespace PZ1
         public void Run()
         {
             int[] arr = new int[10];
-
+            
             InitializeArrayRandom(arr);
             PrintArray(arr);
             Console.WriteLine("Sum of array elements: " + SumArray(arr));
@@ -29,7 +29,7 @@ namespace PZ1
         public void PrintArray(int[] arr)
         {
             Console.WriteLine("Array elements:");
-            foreach (int num in arr)
+            foreach (var num in arr)
             {
                 Console.Write(num + " ");
             }
@@ -61,6 +61,7 @@ namespace PZ1
                 {
                     max = num;
                 }
+                
             }
             return max;
         }

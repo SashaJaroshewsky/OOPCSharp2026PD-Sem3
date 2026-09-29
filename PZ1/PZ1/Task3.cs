@@ -1,12 +1,9 @@
-﻿
-namespace PZ1
+﻿namespace PZ1
 {
     internal class Task3
     {
         public void Run()
         {
-           
-
             string input;
             do
             {
