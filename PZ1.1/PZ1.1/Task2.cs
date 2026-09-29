@@ -23,10 +23,10 @@ namespace PZ1._1
                 Console.Write(arr[i] + " ");
             }
 
-            ////foreach (int num in arr)
-            ////{
-            ////    Console.Write(num + " ");
-            ////}
+            //foreach (var num in arr)
+            //{
+            //    Console.Write(num + " ");
+            //}
 
             Console.WriteLine();
         }
@@ -63,6 +63,7 @@ namespace PZ1._1
 
         private int Min(int[] arr)
         {
+            
             int min = arr[0];
             for (int i = 1; i < arr.Length; i++)
             {
@@ -70,6 +71,7 @@ namespace PZ1._1
                 {
                     min = arr[i];
                 }
+               
             }
             return min;
         }

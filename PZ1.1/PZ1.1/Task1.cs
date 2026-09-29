@@ -1,7 +1,7 @@
 ﻿
 namespace PZ1._1
 {
-    internal class Task1
+    public class Task1
     {
         public void Run()
         {

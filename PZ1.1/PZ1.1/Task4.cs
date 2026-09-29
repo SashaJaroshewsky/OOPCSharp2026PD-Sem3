@@ -1,6 +1,4 @@
-﻿
-
-namespace PZ1._1
+﻿namespace PZ1._1
 {
     internal class Task4
     {
@@ -13,10 +11,10 @@ namespace PZ1._1
             Method2Ref(ref a);
             Console.WriteLine(a);
 
-            Method3Out(out a);
+            Method3Out(out int b);
             Console.WriteLine(a);
 
-
+            
         }
 
         private void Method1(int a)

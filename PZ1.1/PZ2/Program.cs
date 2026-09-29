@@ -26,6 +26,8 @@
                 }
                 Console.WriteLine();
             }
+
+            PZ1._1.Program program = new PZ1._1.Program();
         }
     }
 }
