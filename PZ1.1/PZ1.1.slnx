@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="PZ1.1/PZ1.1.csproj" />
   <Project Path="PZ2/PZ2.csproj" Id="30260d12-fb0a-4733-90b9-4ba7edac3bd4" />
+  <Project Path="PZ3/PZ3.csproj" Id="7989dcf2-216a-4087-8aef-7f900b8cc67a" />
 </Solution>
