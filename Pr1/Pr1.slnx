@@ -2,4 +2,5 @@
   <Project Path="Pr1/Pr1.csproj" />
   <Project Path="Pr1Task2/Pr1Task2.csproj" />
   <Project Path="PZ2/PZ2.csproj" Id="55245318-625f-4b7a-bb8b-953bb026ee4a" />
+  <Project Path="PZ3/PZ3.csproj" Id="1449f91a-d13d-4efb-8d5d-df6c96da3f92" />
 </Solution>
