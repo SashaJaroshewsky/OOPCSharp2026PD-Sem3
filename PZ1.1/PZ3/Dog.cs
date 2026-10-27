@@ -5,11 +5,12 @@ namespace PZ3
     {
         public Dog(string name) : base(name)
         {
-            
+
         }
 
         public override void MakeSound()
         {
+            base.MakeSound();
             Bark();
         }
 

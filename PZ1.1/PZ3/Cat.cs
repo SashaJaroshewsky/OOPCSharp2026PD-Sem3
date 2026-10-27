@@ -18,5 +18,10 @@ namespace PZ3
         {
             Console.WriteLine($"Cat {Name} is running on four legs.");
         }
+
+        public void Purr()
+        {
+            Console.WriteLine($"Cat {Name} is purring.");
+        }
     }
 }
