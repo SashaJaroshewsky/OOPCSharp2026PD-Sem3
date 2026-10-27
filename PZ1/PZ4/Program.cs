@@ -1,4 +1,5 @@
 ﻿using PZ4.Task2;
+using PZ4.Task3;
 
 namespace PZ4
 {
@@ -34,6 +35,11 @@ namespace PZ4
             foreach (ISoundeable soundeable in soundeables)
             {
                 soundeable.MakeSound();
+
+                if(soundeable is Animal animal)
+                {
+                    animal.Run();
+                }
             }
 
             Console.WriteLine("==========================");
@@ -55,8 +61,43 @@ namespace PZ4
             switchObj3.Toggle(); // Вмикає робота
             switchObj3.Toggle(); // Вимикає робота
 
+            Console.WriteLine("==============");
+
+            Dog dog2 = new Dog("Max");
+            dog2.MakeSound();
+
+            Animal animal1 = dog2; // Поліморфізм: Dog є підкласом Animal // Upcasting
+            animal1.MakeSound(); // Викликає метод MakeSound() з класу Dog
+
+            Dog dog7 = (Dog)animal1; // Downcasting
 
 
+
+            if (animal1 is Dog)
+            {
+                Dog dog3 = (Dog)animal1;
+                dog3.MakeSound(); // Викликає метод MakeSound() з класу Dog
+            }
+
+            if(animal1 is Dog dog4)
+            {
+                dog4.MakeSound();
+            }
+
+            Dog dog5 = animal1 as Dog;
+
+            if (dog5 != null)
+            {
+                dog5.MakeSound();
+            }
+
+
+            //Task3.Dog dog6 = (Dog)new Task3.Animal(); 
+            //Animal animal2 = new Dog("Charlie");
+
+            //Task3.Animal animal2 = new Task3.Dog();
+
+            //Task3.Dog dog6 = (Task3.Dog)animal2;
         }
     }
 }

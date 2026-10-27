@@ -3,4 +3,5 @@
   <Project Path="PZ2/PZ2.csproj" Id="6baa7b7a-8e21-417c-8cc2-56110c701c00" />
   <Project Path="PZ3/PZ3.csproj" Id="4e24b813-6dce-4759-adde-c7d6cebd626b" />
   <Project Path="PZ4/PZ4.csproj" Id="96765c17-f9f5-4fa2-9d47-7daf9c9a84c0" />
+  <Project Path="PZ5.Library/PZ5.Library.csproj" Id="afb4f196-6378-4c4c-b636-569164a84700" />
 </Solution>

@@ -7,7 +7,7 @@ namespace PZ4
         {
         }
 
-        public override void MakeSound()
+        public new void MakeSound()
         {
             Console.WriteLine($"{Name} barks.");
         }

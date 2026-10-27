@@ -1,7 +1,7 @@
 ﻿
 namespace PZ4
 {
-    abstract class Animal: ISoundeable
+    public abstract class Animal: ISoundeable
     {
         private string _name;
 
