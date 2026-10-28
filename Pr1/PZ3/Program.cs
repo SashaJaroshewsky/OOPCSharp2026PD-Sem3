@@ -34,6 +34,10 @@ namespace PZ3
             foreach (ISoundeable soundeable in soundeables)
             {
                 soundeable.MakeSound();
+                if(soundeable is Dog dog1)
+                {
+                    dog1.GetPaw();
+                }
             }
 
             //Cat cat2 = (Cat)animals[1];
@@ -48,6 +52,34 @@ namespace PZ3
 
             switcher.Toggle();
             switcher.Toggle();
+
+            Console.WriteLine("======================");
+
+            Cat cat1 = new Cat("ldkjhn");
+            cat1.MakeSound();
+
+            Animal animal1 = dog; 
+            animal1.MakeSound();
+
+            //Cat cat2 = (Cat)animal1;
+            animal1.MakeSound();
+
+            if(animal1 is Cat)
+            {
+                Cat cat2 = (Cat)animal1;
+            }
+
+            if (animal1 is Cat cat3)
+            {
+                cat3.MakeSound();
+            }
+
+            Cat cat4 = animal1 as Cat;
+
+            if(cat4 != null)
+            {
+                cat4.MakeSound();
+            }
         }
     }
 }

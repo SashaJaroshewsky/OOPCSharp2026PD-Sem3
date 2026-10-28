@@ -17,5 +17,10 @@ namespace PZ3
         {
             Console.WriteLine($"{Name} runs on all fours.");
         }
+
+        public void GetPaw()
+        {
+
+        }
     }
 }

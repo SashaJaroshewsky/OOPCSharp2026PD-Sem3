@@ -5,6 +5,8 @@ namespace PZ3.Task2
     {
         private bool _isOn;
 
+        public bool IsOn => _isOn;
+
         private ISwitcheable _switcheable;
 
         public Switch(ISwitcheable switcheable)
