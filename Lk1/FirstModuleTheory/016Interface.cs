@@ -4,8 +4,8 @@
 
     // Інтерфейси дозволяють реалізовувати поліморфізм та забезпечують гнучкість у архітектурі програм.
     // Інтерфейси не можуть містити реалізацію методів (до C# 8.0), а лише їх сигнатури.
-    // За замовчуванням, всі члени інтерфейсу є публічними (public).
-    interface IMyInterface
+    // За замовчуванням, всі члени інтерфейсу є публічними (public), а сам інтерфейс internal
+    internal interface IMyInterface
     {
         int MyProperty { get; } // Властивість (property) - це член інтерфейсу, який дозволяє отримувати значення.
 
@@ -35,7 +35,7 @@
         void AnotherMethod();
     }
 
-    public class MyClassWithMultipleInterfaces : IMyInterface, IAnotherInterface
+    public class MyClassWithMultipleInterfaces : IMyInterface, IAnotherInterface // клас імплементує інтерфейси
     {
         public int MyProperty { get; private set; }
         public void MyMethod()
@@ -46,5 +46,11 @@
         {
             // Реалізація методу з IAnotherInterface
         }
+    }
+
+    // Інтерфейс може наслідуватись від інших інтерфейсів
+    interface IMyInterface2 : IMyInterface // Інтерфейс наслідується від інтерфейсу
+    {
+
     }
 }
