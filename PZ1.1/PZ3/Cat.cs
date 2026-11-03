@@ -9,7 +9,7 @@ namespace PZ3
            
         }
 
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine($"Cat {Name} is meowing.");
         }

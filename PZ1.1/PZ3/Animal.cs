@@ -1,8 +1,7 @@
 ﻿
-
 namespace PZ3
 {
-    internal abstract class Animal
+    public abstract class Animal: ISoundeable
     {
         private string _name;
 

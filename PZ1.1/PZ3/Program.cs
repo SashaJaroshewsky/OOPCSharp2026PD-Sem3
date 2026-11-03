@@ -15,6 +15,8 @@
             Bird bird = new Bird("Tweety");
             bird.Run();
 
+            ToyDuck toyDuck = new ToyDuck();
+
             dog.MakeSound();
             cat.MakeSound();
             bird.MakeSound();
@@ -22,6 +24,8 @@
             Console.WriteLine("============================");
 
             Animal[] animals = new Animal[] { dog, cat, bird };
+
+            ISoundeable[] soundeables = { dog, cat, bird, toyDuck };
 
             Animal an = new Dog("Max");
 
@@ -34,6 +38,11 @@
                 Console.WriteLine($"Animal: {animal.Name}");
                 animal.MakeSound();
                 animal.Run();
+            }
+
+            foreach (ISoundeable soundeable in soundeables)
+            {
+                soundeable.MakeSound();
             }
 
             Cat cat1 = (Cat)animals[1];
