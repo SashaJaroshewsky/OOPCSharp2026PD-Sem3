@@ -31,12 +31,10 @@
             _radius = radius;
         }
         // Реалізація абстрактного методу CalculateArea() для кола.
-        sealed protected override double CalculateArea() // override - ключове слово, яке вказує, що метод перевизначає абстрактний метод базового класу. 
+        sealed protected override double CalculateArea() // override - ключове слово, яке вказує, що метод реалізує абстрактний метод базового класу. 
         {
             return Math.PI * _radius * _radius;
         }
         // sealed - ключове слово, яке забороняє подальше перевизначення цього методу в похідних класах.
     }
-
-
 }
