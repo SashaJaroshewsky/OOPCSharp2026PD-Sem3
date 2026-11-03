@@ -1,13 +1,13 @@
 ﻿
 namespace PZ4
 {
-    internal class Dog: Animal
+    public class Dog: Animal
     {
         public Dog(string name) : base(name)
         {
         }
 
-        public new void MakeSound()
+        public override void MakeSound()
         {
             Console.WriteLine($"{Name} barks.");
         }

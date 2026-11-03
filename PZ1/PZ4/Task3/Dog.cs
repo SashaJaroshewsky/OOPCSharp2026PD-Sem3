@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PZ4.Task3
 {
-    internal class Dog: Animal
+    public class Dog: Animal
     {
     }
 }
